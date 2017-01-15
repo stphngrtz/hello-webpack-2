@@ -1,5 +1,5 @@
-# hello-webpack-2
-Getting started with Webpack 2
+# Webpack 2, Webpack Dev-Server inkl. ES6/ES2015 via Babel
+
 https://blog.madewithenvy.com/getting-started-with-webpack-2-ed2b86c68783#.7mjdh7b5i
 
 Webpack, Dev-Server und eine Library für einen Import installieren.
@@ -22,7 +22,7 @@ npm install --save moment
 ```
 Änderungen an der JavaScript Datei sollten zu einem automatisch reload der Seite führen.
 
-Webpack spricht nur JavaScript. Wenn man zB. ES6 via Babel benutzen möchte, dann müssen entsprechende **Loader** hinzugefügt werden.
+Webpack spricht nur JavaScript. Wenn man zB. ES6/ES2015 via Babel benutzen möchte, dann müssen entsprechende **Loader** hinzugefügt werden.
 
 ```
 npm install --save-dev babel-loader babel-core babel-preset-es2015
@@ -45,3 +45,5 @@ module.exports = {
 // …
 };
 ```
+
+`src/point.js` hinzufügen und `src/app.js` um `import ...` sowie `new Point()` erweitern, fertig ist das ES6/ES2015 Beispiel.
